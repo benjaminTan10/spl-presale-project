@@ -1,0 +1,24 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+presale = "EpUBpUQDo59cSHLdvx5eeo9HqnvM4xPJwVonibxnHw4n"
+[programs.mainnet]
+presale = "EpUBpUQDo59cSHLdvx5eeo9HqnvM4xPJwVonibxnHw4n"
+
+[registry]
+url =  "https://api.mainnet-beta.solana.com"
+
+[provider]
+cluster = "https://damp-magical-scion.solana-mainnet.quiknode.pro/6025a0950f7c5f63ad47d47859e487ccab0a094c"
+
+wallet = "/home/harry/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 60 # Increase the wait time (in seconds)

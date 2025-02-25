@@ -1,0 +1,23 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+presale = "3aufGZXgvpzT9Xuv6m9KhSWYST9yyp3nT83VeRJ8Hzgf"
+[programs.mainnet]
+presale = "3aufGZXgvpzT9Xuv6m9KhSWYST9yyp3nT83VeRJ8Hzgf"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://aged-bitter-card.solana-devnet.quiknode.pro/553cccbe06b94ae764461f7bbdd47334d0e7eb65"
+wallet = "/home/harry/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[test]
+startup_wait = 60 # Increase the wait time (in seconds)
